@@ -66,6 +66,7 @@
         android:layout_width="188dp"
         android:layout_height="172dp"
         android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -101,7 +102,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editSenha"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:drawableLeft="@drawable/ic_lock"
             android:drawablePadding="5dp"
             android:hint="Senha"
