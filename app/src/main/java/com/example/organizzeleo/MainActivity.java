@@ -98,7 +98,7 @@ public class MainActivity extends IntroActivity {
         autenticacao = ConfiguracaoFirebase.getAutenticacao();
         if(autenticacao.getCurrentUser() != null){
 
-            abrirTelaPrincipal();
+           // abrirTelaPrincipal();
 
         }
     }

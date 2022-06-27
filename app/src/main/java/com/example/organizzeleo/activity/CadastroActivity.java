@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -27,6 +29,8 @@ public class CadastroActivity extends AppCompatActivity {
     private FirebaseAuth autenticacao;
     private Usuario usuario;
 
+    Animation animFadein;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,11 +41,16 @@ public class CadastroActivity extends AppCompatActivity {
     campoSenha = findViewById(R.id.editSenha);
     buttonCadastro = findViewById(R.id.buttonCadastrar);
 
+        animFadein = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.fade_in);
 
 
-    buttonCadastro.setOnClickListener(new View.OnClickListener() {
+
+        buttonCadastro.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+            buttonCadastro.startAnimation(animFadein);
 
             String textoNome = campoNome.getText().toString();
             String textoSenha = campoSenha.getText().toString();
