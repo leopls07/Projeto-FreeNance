@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OrganizzeLeo</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bem vindo !"</string>
+    <string name="invalid_username">Nome de usuário inválido</string>
+    <string name="invalid_password">Senha deve conter mais de 5 caracteres</string>
+    <string name="login_failed">"Login falhou"</string>
+    <string name="criar_conta">"Ainda não tem conta?
+        Cadastre-se"</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+
+</resources>
+
+
+
