@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -29,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
     private Button botaoEntrar;
     private Usuario usuario;
 
+    Animation animation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,11 @@ public class LoginActivity extends AppCompatActivity {
         campoEmail= findViewById(R.id.username);
         campoSenha = findViewById(R.id.password);
         botaoEntrar = findViewById(R.id.buttonLogin);
+
+        animation = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+
+
+
 
         //login = FirebaseAuth.getInstance();
 
@@ -54,6 +63,8 @@ public class LoginActivity extends AppCompatActivity {
                 botaoEntrar.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
+                        botaoEntrar.startAnimation(animation);
 
 
 

@@ -103,10 +103,11 @@
             android:id="@+id/editSenha"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_lock"
             android:drawableLeft="@drawable/ic_lock"
             android:drawablePadding="5dp"
             android:hint="Senha"
-            android:inputType="textShortMessage|textNoSuggestions|textPassword"
+            android:inputType="textShortMessage|textNoSuggestions|textPassword|textWebPassword"
             android:textColor="@android:color/white"
             android:textColorHint="@color/branco_naomuitobranco" />
     </com.google.android.material.textfield.TextInputLayout>

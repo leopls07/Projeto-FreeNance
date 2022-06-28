@@ -18,7 +18,7 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="307dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
 
         android:layout_marginBottom="16dp"
@@ -68,7 +68,7 @@
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="307dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@drawable/botao_login_gradient"
@@ -81,7 +81,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
-        android:layout_width="307dp"
+        android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:textColorHint="@color/branco_naomuitobranco"
@@ -96,10 +96,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/ic_lock"
             android:drawableLeft="@drawable/ic_lock"
             android:drawablePadding="5dp"
             android:hint="Senha"
+            android:inputType="textPassword|textWebPassword"
             android:textColor="@android:color/white"
             android:textColorHint="@color/branco_naomuitobranco" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -107,7 +109,7 @@
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_marginBottom="16dp"
         android:text="Faça Login"
         android:textColor="@color/colorAccent"
