@@ -17,8 +17,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class PrincipalActivity extends AppCompatActivity {
 
-    private FirebaseAuth autenticacao;
-    private Button botaoDeslogar;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +27,7 @@ public class PrincipalActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //botaoDeslogar = findViewById(R.id.deslogar);
+
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -38,23 +39,5 @@ public class PrincipalActivity extends AppCompatActivity {
         });
 
 
-        botaoDeslogar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deslogar();
-            }
-        });
-
-
     }
-
-
-
-
-
-    public void deslogar(){
-
-    }
-
-
 }
