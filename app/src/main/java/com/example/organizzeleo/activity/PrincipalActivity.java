@@ -26,7 +26,7 @@ public class PrincipalActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        botaoDeslogar = findViewById(R.id.botaoDeslogar);
+        //botaoDeslogar = findViewById(R.id.deslogar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -53,8 +53,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
 
     public void deslogar(){
-        autenticacao = ConfiguracaoFirebase.getAutenticacao();
-        autenticacao.signOut();
+
     }
 
 
